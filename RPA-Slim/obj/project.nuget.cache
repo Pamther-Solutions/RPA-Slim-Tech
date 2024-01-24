@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "eyyD6Y++ZY7WrNCkBPo1EAZ9ahd6G9NU6lpr4urUCI1rbLSQKy3FtgMipY1EiZRMHvAhQAAciUEZgJpfr6I6hw==",
+  "dgSpecHash": "DaSPY8unzNE9lGQmfrUqX8KbEFg6Rp/e0sNOC0D0/WIJyXGCNvfGfs8SS3sraquLifKzVQ2ZBtSr50Xabcv2Tg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gabriel\\Git\\RPA-Slim-Tech\\RPA-Slim\\RPA-Slim.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriel\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Gabriel\\.nuget\\packages\\selenium.support\\4.17.0\\selenium.support.4.17.0.nupkg.sha512",
+    "C:\\Users\\Gabriel\\.nuget\\packages\\selenium.webdriver\\4.17.0\\selenium.webdriver.4.17.0.nupkg.sha512",
+    "C:\\Users\\Gabriel\\.nuget\\packages\\selenium.webdriver.chromedriver\\121.0.6167.8500\\selenium.webdriver.chromedriver.121.0.6167.8500.nupkg.sha512"
+  ],
   "logs": []
 }
