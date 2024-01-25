@@ -13,7 +13,12 @@ namespace RPA_Slim
     {
         IWebDriver driver;
 
-
+ 
+        public void FindElement(string element, string events)
+        {
+            driver.FindElement(By.XPath(element)).SendKeys(events);
+        }
+        
 
         public BotSlim()
         {
@@ -25,11 +30,11 @@ namespace RPA_Slim
         {
             driver.Navigate().GoToUrl("https://slim-tech.netlify.app/");
 
-            driver.FindElement(By.XPath("//*[@id=\"contato\"]/div[1]/form/div/div[1]/input[1]")).SendKeys("oi");
-            driver.FindElement(By.XPath("//*[@id=\"contato\"]/div[1]/form/div/div[1]/input[2]")).SendKeys("oi");
-            driver.FindElement(By.XPath("//*[@id=\"contato\"]/div[1]/form/div/div[2]/input[1]")).SendKeys("oi");
-            driver.FindElement(By.XPath("//*[@id=\"contato\"]/div[1]/form/div/div[2]/input[2]")).SendKeys("oi");
-            driver.FindElement(By.XPath("//*[@id=\"contato\"]/div[1]/form/div/textarea")).SendKeys("oi");
+            FindElement("//*[@id=\"contato\"]/div[1]/form/div/div[1]/input[1]", "user");
+            FindElement("//*[@id=\"contato\"]/div[1]/form/div/div[1]/input[2]", "exemple@gmail.com");   
+            FindElement("//*[@id=\"contato\"]/div[1]/form/div/div[2]/input[1]","11 99999-9999");
+            FindElement("//*[@id=\"contato\"]/div[1]/form/div/div[2]/input[2]", "example subject");
+            FindElement("//*[@id=\"contato\"]/div[1]/form/div/textarea", "example message");
 
         }
 
